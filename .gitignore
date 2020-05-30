@@ -1,0 +1,22 @@
+makefile
+build.sh
+.idea/
+
+.gradle/
+#gradle/
+#gradlew
+#gradlew.bat
+
+# generated
+bin/
+build/
+run/
+out/
+*.class
+
+ignore/
+
+.classpath
+.project
+.settings/
+
