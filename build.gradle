@@ -1,11 +1,15 @@
 plugins {
-    id 'java'
+    id 'com.palantir.git-version' version '0.11.0'
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+apply plugin: 'java'
+apply plugin: 'java-library'
+
+group 'com.ezekielnewren.lib'
+version version()
 
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
