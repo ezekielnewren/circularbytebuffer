@@ -22,6 +22,7 @@ public class CircularByteBuffer implements ByteChannel {
      */
     public CircularByteBuffer(byte[] _buff) {
         this.buff = _buff;
+        if (this.buff.length == 0) throw new IllegalArgumentException("buffer must contain as least 1 byte");
     }
 
     public CircularByteBuffer(int size) {
